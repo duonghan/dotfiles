@@ -1,0 +1,28 @@
+[submodule "vim-markdown"]
+	path = ./bundle/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "nerdtree"]
+	path = ./bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim-fugitive"]
+	path = ./bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "python-mode"]
+	path = ./bundle/python-mode
+	url = https://github.com/python-mode/python-mode 
+[submodule "vim-javascript"]
+	path = ./bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git 
+[submodule "YouCompleteMe"]
+	path = ./bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git 
+[submodule "YCM-Generator"]
+	path = ./bundle/YCM-Generator
+	url = https://github.com/rdnetto/YCM-Generator.git
+[submodule "lightline.vim"]
+	path = ./bundle/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git 
+[submodule "ale"]
+	path = ./bundle/ale
+	url = https://github.com/w0rp/ale.git
+

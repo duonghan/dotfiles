@@ -82,9 +82,9 @@ let g:ale_sign_warning = '--'
 set noshowmode
 
 " Set color scheme
-"let g:lightline = {
-"      \ 'colorscheme': 'wombat',
-"      \ }
+let g:lightline = {
+      \ 'colorscheme': 'one',
+      \ }
 
 " Set config for artesanal color scheme
 let g:artesanal_italic = 1
