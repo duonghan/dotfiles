@@ -37,8 +37,8 @@ bindsym $mod+Return exec terminator
 bindsym $mod+Shift+q kill
 
 # start lock screen
+# exec i3lock -i /home/henry/Pictures/kurumi.png -t
 bindsym $mod+Shift+x exec i3lock -i /home/henry/Pictures/kurumi.png -t
-
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -show run -lines 5 -eh 2 -width 100 -padding 500 -opacity "75" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 14"
@@ -139,8 +139,12 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 # default workspaces
 assign [class="Google-chrome"] $ws3
-assign [class="code"] $ws4
-assign [class="atom"] $ws6
+assign [class="Thunar"] $ws5
+assign [class="Ranger"] $ws5
+assign [class="Code"] $ws6
+assign [class="Code"] $ws6
+assign [class="Atom"] $ws6
+assign [class="Vlc"] $ws9
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -177,8 +181,8 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Gaps (i3-gaps)
-#gaps inner 6
-#gaps outer 6
+gaps inner 3
+gaps outer 3
 
 
 set $bg-color 	         #2f343f
@@ -227,6 +231,10 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+# Brightness of screen
+bindsym XF86MonBrightnessUp exec xbacklight -inc 7 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 7  # decrease screen brightness
+
 #Set wallpaper
 exec --no-startup-id feh --bg-fill /home/henry/Pictures/Aliga/aliga_1.jpg
 
@@ -235,3 +243,5 @@ bindsym $mod+Shift+s sticky toggle
 
 exec --no-startup-id compton --config ~/.config/i3/compton.conf -b
 exec --no-startup-id compton -f
+exec --no-startup-id xautolock -time 10 -locker 'i3lock -i /home/henry/Pictures/kurumi.png -t -d -c 000000'
+
