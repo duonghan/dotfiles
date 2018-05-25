@@ -1,0 +1,65 @@
+" configuration
+set nocompatible
+set encoding=UTF-8
+set laststatus=2
+set t_Co=256
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set statusline=%t
+set relativenumber
+set number
+set autoindent
+set hlsearch
+set include=
+set splitbelow
+set splitright
+
+filetype plugin indent on
+syntax on
+
+call plug#begin('~/.vim/plugged')
+Plug 'quabug/molokai'
+Plug 'triglav/vim-visual-increment'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-commentary'
+Plug 'itchyny/vim-gitbranch'
+Plug 'sagarrakshe/toggle-bool'
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+Plug 'digitaltoad/vim-pug', { 'for': 'pug' }
+Plug 'quabug/vim-gdscript', { 'for': 'gdscript' }
+Plug 'jceb/vim-orgmode', { 'for': 'org' }
+Plug 'tpope/vim-speeddating', { 'for': 'org' }
+Plug 'itchyny/lightline.vim'
+Plug 'ryanoasis/vim-devicons'
+call plug#end()
+
+colorscheme molokai
+hi Normal guibg=NONE ctermbg=NONE
+hi LineNr guibg=NONE ctermbg=NONE
+hi Search ctermbg=yellow ctermfg=black
+hi PmenuSel ctermbg=yellow ctermfg=black
+
+" Set Space for Leader key
+let mapleader=" "
+nmap <Leader> :e ~/.vimrc<CR>
+noremap <Leader><Leader>s :so ~/.vimrc<CR>
+
+" Fast saving, quit
+nmap <leader>w :w!<CR>
+nmap <leader>q :q!<CR>
+
+map <leader>t :NERDTreeToggle<CR>
+nnoremap <leader>h <C-w><C-h>
+nnoremap <leader>j <C-w><C-j>
+nnoremap <leader>k <C-w><C-k>
+nnoremap <leader>l <C-w><C-l>
+
+" Split window
+nnoremap <leader>v :vsplit <CR>
+nnoremap <leader>b :split <CR>
+
+let g:NERDTreeShowLineNumbers=1
+let g:NERDTreeIgnore = ['\.pyc$','\.o$']
