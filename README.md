@@ -17,4 +17,4 @@ Note: Use font awesome 4(the lastest font in currently - 5.0.13 has some error a
  git submodule update --init && git submodule foreach git pull origin master
 ```
 
-![Vim-Logo](https://upload.wikimedia.org/wikipedia/commons/9/9f/Vimlogo.svg)
+![Vim-Logo]('./dotfile.svg')  
