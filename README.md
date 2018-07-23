@@ -1,4 +1,6 @@
-## This is configure file for anything in my linux: mint, arch
+# Arch Linux with i3wm dotfile
+This is some configure files for anything in my Linux distribution: Linux Mint, Arch Linux.  
+
 ![Vim-GIF](https://www.vim.org/images/vim_on_fire.gif)  
 ![Vim-Logo](./dotfile.svg)  
 
@@ -9,8 +11,8 @@
 - i3status: config i3 status bar in i3wm (case:arch)
 
 ## Getting Started
-### Requirements
-Before config
+### Prerequisites
+Requirements config:  
 - A Linux distribution OS.
 - All configuration is in Bash Shell, thus you have to install bash ( if it hasn't installed yet) then set bash as your login shell:  
 `chsh -s $(which bash)`
@@ -55,4 +57,4 @@ Follow me on
 [![](http://i.imgur.com/0o48UoR.png)](https://github.com/duonghan)
 
 ## License
-This project is licensed under the MIT License © 2018
+This project is licensed under the MIT License © 2018 - see the [LICENSE.md](./LICENSE.md) file for details
