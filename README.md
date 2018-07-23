@@ -39,10 +39,10 @@ I will update it soon.
 
 
 ## Links
-- i3wm: [](https://i3wm.org/)
-- Font Awesome Cheetset: [](https://fontawesome.com/cheatsheet?from=io)
-- Font Awesome Download: [](https://github.com/FortAwesome/Font-Awesome/releases)
-- 
+- [i3wm documentation](https://i3wm.org/)
+- [Font Awesome Cheetset](https://fontawesome.com/cheatsheet?from=io)
+- [Font Awesome Download](https://github.com/FortAwesome/Font-Awesome/releases)
+- [i3lock](https://www.reddit.com/r/unixporn/comments/3358vu/i3lock_unixpornworthy_lock_screen/)
 ## Contributing
 1. Fork it (https://github.com/duonghan/dotfiles/fork)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
