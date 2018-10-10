@@ -48,7 +48,6 @@ border-color = #00000000
 padding-left = 0
 padding-right = 2
 
-
 module-margin-left = 0
 module-margin-right = 2
 
@@ -63,9 +62,9 @@ font-5 = Termsynu:size=8;-1
 ; font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 ; font-2 = siji:pixelsize=10;1
 
-modules-left = powermenu i3 filesystem memory cpu
+modules-left =  i3 filesystem memory cpu
 modules-center = xwindow
-modules-right = pulseaudio wlan eth battery date
+modules-right = pulseaudio xbacklight wlan eth battery date
 
 tray-position = right
 tray-padding = 2
@@ -158,7 +157,7 @@ wrapping-scroll = false
 ; ws-icon-[0-9]+ = label;icon
 ; NOTE: The label needs to match the name of the i3 workspace
 
-ws-icon-0 = 0;
+ws-icon-0 = 10;
 ws-icon-1 = 1;
 ws-icon-2 = 2;
 ws-icon-3 = 3;
@@ -178,23 +177,23 @@ label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %icon%
+label-focused = %index%
 label-focused-background = ${module/bspwm.label-focused-background}
 label-focused-underline = #ffffff
 label-focused-padding = ${module/bspwm.label-focused-padding}
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = %icon%
+label-unfocused = %index%
 label-unfocused-padding = ${module/bspwm.label-occupied-padding}
 
 ; visible = Active workspace on unfocused monitor
-label-visible = %icon%
+label-visible = %index%
 label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %icon%
+label-urgent = %index%
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
@@ -317,7 +316,7 @@ type = internal/date
 interval = 5
 
 date =
-date-alt = " %Y-%m-%d"
+date-alt = " %d-%m-%Y"
 
 time = %I:%M %p
 time-alt = %I:%M:%S %p
@@ -387,7 +386,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 type = internal/battery
 battery = BAT0
 adapter = AC
-full-at = 51
+full-at = 100
 
 time-format = %H:%M
 
@@ -444,9 +443,10 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = 
-label-open-foreground = ${colors.secondary}
-label-close =  cancel
+label-open = 0x00f
+label-open-foreground = #FF6633 
+;${colors.secondary}
+label-close = cancel
 label-close-foreground = ${colors.secondary}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
