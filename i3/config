@@ -27,7 +27,7 @@ font pango: System San Francisco Display 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminator 
+bindsym $mod+Return exec urxvt 
 # i3-sensible-terminal
 
 # kill focused window
@@ -126,9 +126,9 @@ assign [class="Google-chrome"] 3
 assign [class="Meld|Postman|robo3t"] 4
 assign [class="Thunar|Ranger"] 5
 assign [class="Code|Subl"] 6
-assign [class="jetbrains-webstorm|jetbrains-studio"] 7
-assign [class="vlc"] 9
-assign [class="Slack"] 8
+assign [class="jetbrains-webstorm|jetbrains-studio|jetbrains-clion|jetbrains-pycharm|jetbrains-idea"] 7
+assign [class="smplayer|Popcorn-Time"] 9
+assign [class="Slack|VirtualBox"] 8
 assign [class="Firefox"] 10
 
 # reload the configuration file
@@ -173,7 +173,7 @@ gaps outer 1
 smart_gaps on
 smart_borders on
 for_window [class="^.*"] border pixel 1
-for_window [class="Terminator"] floating enable
+for_window [class="Terminator|URxvt"] floating enable
 # for_window [class="vlc"] floating enable border normal
 
 set $bg-color 	         #2f343f
@@ -223,5 +223,5 @@ bindsym $mod+Shift+s sticky toggle
 exec_always --no-startup-id polybar top
 exec --no-startup-id compton --config ~/.config/i3/compton.conf -b
 exec --no-startup-id compton -f
-exec --no-startup-id xautolock -corners -detectsleep -time 5 -locker 'i3lock -i /home/henry/Pictures/wall/arch_8.png -t -d -c 000000'
-
+# exec --no-startup-id xautolock -corners -detectsleep -time 5 -locker 'i3lock -i /home/henry/Pictures/wall/arch_8.png -t -d -c 000000'
+# exec --no-startup-id xautolock -detectsleep -time 3 -locker 'i3lock -i /home/henry/Pictures/wall/arch_8.png -t -d -c 000000' -notify 30 -notifier "notify-send -u critical -t 10000 -- 'LOCKING screen in 30 seconds'"
